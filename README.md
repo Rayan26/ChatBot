@@ -1,31 +1,3 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/Uttam580/chatterbot_chatbot?style=plastic)
-![GitHub language count](https://img.shields.io/github/languages/count/Uttam580/chatterbot_chatbot?style=plastic)
-![GitHub top language](https://img.shields.io/github/languages/top/Uttam580/chatterbot_chatbot?style=plastic)
-![GitHub last commit](https://img.shields.io/github/last-commit/Uttam580/chatterbot_chatbot?color=red&style=plastic)
-
-
-
-## chatterbot-chatbot
-
-#### A web implementation of [ChatterBot](https://github.com/gunthercox/ChatterBot) using Flask.
-
-
-**quick demo**
-
-  ![demo_gif](https://github.com/Uttam580/chatterbot_chatbot/blob/master/demo.gif)
-
-
-### What is chatbot:
-
-A chatbot is an artificial intelligence-powered piece of software in a device (Siri, Alexa, Google Assistant etc), application, website or other networks that try to gauge consumer’s needs and then assist them to perform a particular task like a commercial transaction, hotel booking, form submission etc . 
-
-Today almost every company has a chatbot deployed to engage with the users. Some of the ways in which companies are using chatbots are:
-
-    * To deliver flight information
-
-    * to connect customers and their finances
-
-    * As customer support. The possibilities are (almost) limitless.
 
 ### chatterbot : 
 
@@ -39,54 +11,9 @@ With increased responses, the accuracy of the chatbot also increases. The progra
 
 I trained  based on  english greetings and conversations corpora.
 
-        ```#created chatbot with name john 
-
-        #SQLStorageAdapter which allows the chat bot to connect to SQL databases. By default, this adapter will create a SQLite database.
-
-        english_bot = ChatBot("John", storage_adapter="chatterbot.storage.SQLStorageAdapter")
-
-        trainer = ChatterBotCorpusTrainer(english_bot)#allows the chat bot to be trained using data from the ChatterBot dialog corpus.
-
-        trainer.train("chatterbot.corpus.english")# trainning based on  english greetings and conversations corpora.```
-
-
-### ```Language Independence```
-
-The design of ChatterBot is such that it allows the bot to be trained in multiple languages. On top of this, the machine learning algorithms make it easier for the bot to improve on its own using the user’s input.
-
-
-### Project Directory Tree
-
-```
-flask-chatterbot-master
-├─ app.py
-├─ demo.gif
-├─ README.md
-├─ requirements.txt
-├─ static
-│  ├─ css
-│  │  └─ style.css
-│  └─ js
-│     └─ main.js
-└─ templates
-   └─ index.html
-
-```
 
 ### Local Setup:
  1. Ensure that Python, Flask, SQLAlchemy, and ChatterBot are installed (either manually, or run `pip install -r requirements.txt`).
  2. Run *app.py* with `python app.py`.
  3. The demo will be live at [http://localhost:5000/](http://localhost:5000/)
 
-
- ###  Bug / Feature Request
-
-If you find a bug (AttributeError: 'ChatBot' object has no attribute 'set_trainer/or not getting any output from chatterbot etc), kindly open an issue <a href = "https://github.com/Uttam580/chatterbot_chatbot/issues/new">here</a> by including your search query and the expected result.
-
-
- ### Resource: 
-
- https://chatterbot.readthedocs.io/en/stable/#
-
-
-# ChatBot
